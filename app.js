@@ -8,8 +8,9 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 
-// Update if using MongoAtlas
-mongoose.connect('mongodb://cluster0-zsh6w.mongodb.net/test?retryWrites=true&w=majority')
+// If using MongoAtlas uncomment the next line and complete the link with your cluster
+//mongoose.connect('mongodb+srv://YOUR_MONGO_ATLAS_LINK', {useNewUrlParser: true} )
+mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true})
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
