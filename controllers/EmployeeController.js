@@ -4,19 +4,34 @@ var Employee = require("../models/Employee");
 var employeeController = {};
 
 employeeController.list = function(req, res) {
-  Employee.find({}).exec(function (err, employees) {
-    if (err) {
-      console.log("Error:", err);
-    }
-    else {
-      res.render("../views/employees/index", {employees: employees});
-    }
-  });
+ // TODO
+};
+
+employeeController.show = function(req, res) {
+  // TODO
 };
 
 employeeController.create = function(req, res) {
   res.render("../views/employees/create");
 };
+
+employeeController.save = function(req, res) {
+  // TODO
+};
+
+employeeController.edit = function(req, res) {
+  // TODO
+};
+
+employeeController.update = function(req, res) {
+  // TODO
+};
+
+employeeController.delete = function(req, res) {
+  // TODO
+};
+
+
 
 
 
