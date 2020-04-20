@@ -9,7 +9,7 @@ mongoose.Promise = global.Promise;
 
 
 // Update if using MongoAtlas
-mongoose.connect('mongodb://localhost/employee')
+mongoose.connect('mongodb://cluster0-zsh6w.mongodb.net/test?retryWrites=true&w=majority')
   .then(() =>  console.log('connection succesful'))
   .catch((err) => console.error(err));
 
